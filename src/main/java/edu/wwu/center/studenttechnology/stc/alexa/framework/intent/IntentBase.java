@@ -25,11 +25,19 @@ public abstract class IntentBase {
 
 	// Intents need the following methods
 
-	public abstract SpeechletResponse execute(Intent intent, Session session);
+	public SpeechletResponse execute(Intent intent, Session session) {
+		return null;
+	}
 
-	public abstract SpeechletResponse handleYesResponse(Intent intent, Session session);
+	public SpeechletResponse handleYesResponse(Intent intent, Session session) {
+		return null;
+	}
 
-	public abstract SpeechletResponse handleNoResponse(Intent intent, Session session);
+	public SpeechletResponse handleNoResponse(Intent intent, Session session) {
+		return null;
+	}
 
-	public abstract SpeechletResponse handleNextIntent(Intent intent, Session session);
+	public SpeechletResponse handleNextIntent(Intent intent, Session session) {
+		return null;
+	}
 }
